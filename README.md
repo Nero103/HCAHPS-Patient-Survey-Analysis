@@ -1,4 +1,5 @@
-# Project
+# Project: HCAHPS Patient Survey Analysis
+<img width="725" height="420" alt="HCAHPS Cover" src="https://github.com/user-attachments/assets/18f5f2a9-2dbf-4775-9bda-cae9873cac4e" />
 
 ## Overview
 
@@ -83,6 +84,7 @@ A major part of the project involved preparing and validating the survey data be
 The project emphasized working with survey data from varying sources and varying quality levels.
 
 ## Data Modeling
+<img width="797" height="739" alt="HCAHPS Survey Data Model" src="https://github.com/user-attachments/assets/a4f5cfbd-8827-4cae-91aa-62c58e489462" />
 
 The project used a star-schema style data model to support filtering, aggregation, and cross-table analysis.
 
@@ -99,16 +101,16 @@ The project used a star-schema style data model to support filtering, aggregatio
 
 ### Key Relationships
 
-reports[Release Period] > state_results[Release Period]
-                        > national_results[Release Period]
-                        > cleaned_responses[Release Period]
+* reports[Release Period] > state_results[Release Period]
+* reports[Release Period] > national_results[Release Period]
+* reports[Release Period] > cleaned_responses[Release Period]
 
-states[State] > state_results[State]
-              > cleaned_responses[State]
+* states[State] > state_results[State]
+* states[State] > cleaned_responses[State]
 
-measures[Measure ID] > state_results[Measure ID]
-                     > national_results[Measure ID]
-                     > questions[Measure ID]
+* measures[Measure ID] > state_results[Measure ID]
+* measures[Measure ID] > national_results[Measure ID]
+/ measures[Measure ID] > questions[Measure ID]
 
 
 The reporting table functioned as the project’s date/reporting dimension and standardized filtering across all dashboard pages.
@@ -136,14 +138,17 @@ The DAX calculations supported several analyses such as: Survey response analysi
 ## Dashboard Pages
 
 ### National & Regional Overview
+<img width="804" height="458" alt="HCAHPS  page 1" src="https://github.com/user-attachments/assets/b39da12d-1892-44dc-b388-801814e33994" />
 
 Focused on Overall patient satisfaction, National NPS, Positive vs. negative survey responses, and Regional healthcare performance
 
 ## State Level Analysis
+<img width="803" height="458" alt="HCAHPS  page 2" src="https://github.com/user-attachments/assets/9931bd2e-f370-4276-b416-6f15076ae98d" />
 
 Focused on State rankings, Regional comparisons, Geographic analysis,and  State level positive and negative response trends
 
 ## Recommendations & Trend Insights
+<img width="800" height="455" alt="HCAHPS  page 3" src="https://github.com/user-attachments/assets/ff619041-c9b7-4a8b-a864-560f6fa67cbc" />
 
 Focused on Declining satisfaction trends since 2019, NPS changes over time, Quality-of-care improvement areas, and Operational recommendations
 
