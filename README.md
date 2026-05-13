@@ -18,7 +18,7 @@ This project was completed as part of the Maven Analytics Healthcare Challenge a
 
 ## Data Source
 
-The data source for this project was real HCAHPS patient survey data from the Centers for Medicare & Medicaid Services (CMS). It a national, standardized survey data of hospital patients regarding their experiences during a recent inpatient hospital stay between 2013 and 2022.
+The data source for this project was real HCAHPS patient survey data from the Centers for Medicare & Medicaid Services (CMS). Its a national, standardized survey data of hospital patients regarding their experiences during a recent inpatient hospital stay between 2013 and 2022.
 
 The dataset included survey response metrics and hospital performance indicators across multiple reporting periods.
 
